@@ -1,0 +1,41 @@
+\documentclass{minimal}
+\usepackage{luatex85}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{graphdrawing,graphs,shapes}
+\usegdlibrary{layered}
+\usepackage{forest}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{lstlisting}
+\PreviewEnvironment{tikzpicture}
+\PreviewEnvironment{forest}
+\usepackage[numbered]{bookmark}
+\begin{document}
+\begin{forest}
+  for tree={
+    font=\ttfamily,
+    grow'=0,
+    child anchor=west,
+    parent anchor=south,
+    anchor=west,
+    calign=first,
+    edge path={
+      \noexpand\path [draw, \forestoption{edge}]
+      (!u.south west) +(7.5pt,0) |- node[fill,inner sep=1.25pt] {} (.child anchor)\forestoption{edge label};
+    },
+    before typesetting nodes={
+      if n=1
+        {insert before={[,phantom]}}
+        {}
+    },
+    fit=band,
+    before computing xy={l=15pt},
+  }
+[\textbf{\textcolor{magenta}{Car}} model \textcolor{green}{ Model 2000 }  fuel \textcolor{orange}{electric}  power \textcolor{green}{ 69.000000 } ]
+\end{forest}
+\end{document}
+

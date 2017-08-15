@@ -1,0 +1,7 @@
+Car manufacturer 'Car Brand' model 'Model 2000' year '2002'
+|- main engine Engine fuel electric power '69.000000'
+`- tires Tires size '4'
+  |- item Tire manufacturer 'Tire Brand' width '215' size '16.000000'
+  |- item Tire manufacturer 'Tire Brand' width '215' size '16.000000'
+  |- item Tire manufacturer 'Tire Brand' width '215' size '16.000000'
+  `- item Tire manufacturer 'Tire Brand' width '215' size '16.000000'

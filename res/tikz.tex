@@ -1,0 +1,120 @@
+\documentclass{minimal}
+\usepackage{luatex85}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{graphdrawing,graphs,shapes}
+\usegdlibrary{layered}
+\usepackage{forest}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{lstlisting}
+\PreviewEnvironment{tikzpicture}
+\PreviewEnvironment{forest}
+\usepackage[numbered]{bookmark}
+\begin{document}
+\begin{tikzpicture}[layered layout,every edge/.style={very thick, draw=blue!40!black!60, shorten >=1pt, shorten <=1pt}, every node/.style={rectangle, text ragged, inner sep=2mm, rounded corners, shade, top color=white, bottom color=blue!50!black!20, draw=blue!40!black!60, very thick }]
+\node
+	[rectangle split, rectangle split parts=3, text ragged]
+	 (0x7ffcac1f024c-N4dump4demo6engineE)
+	{
+		\textbf{Engine}
+		\nodepart{two}
+		\textit{fuel}
+		electric
+		\nodepart{three}
+		\textit{power}
+		69.000000
+	};
+\node
+	[rectangle split, rectangle split parts=4, text ragged]
+	 (0x7ffcac1f0258-N4dump4demo4tireE)
+	{
+		\textbf{Tire}
+		\nodepart{two}
+		\textit{manufacturer}
+		Tire Brand
+		\nodepart{three}
+		\textit{width}
+		215
+		\nodepart{four}
+		\textit{size}
+		16.000000
+	};
+\node
+	[rectangle split, rectangle split parts=4, text ragged]
+	 (0x7ffcac1f0280-N4dump4demo4tireE)
+	{
+		\textbf{Tire}
+		\nodepart{two}
+		\textit{manufacturer}
+		Tire Brand
+		\nodepart{three}
+		\textit{width}
+		215
+		\nodepart{four}
+		\textit{size}
+		16.000000
+	};
+\node
+	[rectangle split, rectangle split parts=4, text ragged]
+	 (0x7ffcac1f02a8-N4dump4demo4tireE)
+	{
+		\textbf{Tire}
+		\nodepart{two}
+		\textit{manufacturer}
+		Tire Brand
+		\nodepart{three}
+		\textit{width}
+		215
+		\nodepart{four}
+		\textit{size}
+		16.000000
+	};
+\node
+	[rectangle split, rectangle split parts=4, text ragged]
+	 (0x7ffcac1f02d0-N4dump4demo4tireE)
+	{
+		\textbf{Tire}
+		\nodepart{two}
+		\textit{manufacturer}
+		Tire Brand
+		\nodepart{three}
+		\textit{width}
+		215
+		\nodepart{four}
+		\textit{size}
+		16.000000
+	};
+\node
+	[rectangle split, rectangle split parts=1, text ragged]
+	 (0x7ffcac1f0258-St5arrayIN4dump4demo4tireELm4EE)
+	{
+		\textbf{Tires}
+	};
+\node
+	[rectangle split, rectangle split parts=4, text ragged]
+	 (0x7ffcac1f0208-N4dump4demo3carE)
+	{
+		\textbf{Car}
+		\nodepart{two}
+		\textit{manufacturer}
+		Car Brand
+		\nodepart{three}
+		\textit{model}
+		Model 2000
+		\nodepart{four}
+		\textit{year}
+		2002
+	};
+\draw (0x7ffcac1f0208-N4dump4demo3carE) edge[->] (0x7ffcac1f024c-N4dump4demo6engineE);
+\draw (0x7ffcac1f0208-N4dump4demo3carE) edge[->] (0x7ffcac1f0258-St5arrayIN4dump4demo4tireELm4EE);
+\draw (0x7ffcac1f0258-St5arrayIN4dump4demo4tireELm4EE) edge[->] (0x7ffcac1f0258-N4dump4demo4tireE);
+\draw (0x7ffcac1f0258-St5arrayIN4dump4demo4tireELm4EE) edge[->] (0x7ffcac1f0280-N4dump4demo4tireE);
+\draw (0x7ffcac1f0258-St5arrayIN4dump4demo4tireELm4EE) edge[->] (0x7ffcac1f02a8-N4dump4demo4tireE);
+\draw (0x7ffcac1f0258-St5arrayIN4dump4demo4tireELm4EE) edge[->] (0x7ffcac1f02d0-N4dump4demo4tireE);
+\end{tikzpicture}
+\end{document}
+

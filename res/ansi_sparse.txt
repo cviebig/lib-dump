@@ -1,0 +1,1 @@
+[1m[35mCar[0m model [32m'Model 2000'[0m fuel [33melectric[0m power [32m'69.000000'[0m

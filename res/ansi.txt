@@ -1,0 +1,7 @@
+[1m[35mCar[0m manufacturer [32m'Car Brand'[0m model [32m'Model 2000'[0m year [32m'2002'[0m[34m
+|- [0mmain engine [1m[35mEngine[0m fuel [33melectric[0m power [32m'69.000000'[0m[34m
+`- [0mtires [1m[35mTires[0m size [32m'4'[0m[34m
+  |- [0mitem [1m[35mTire[0m manufacturer [32m'Tire Brand'[0m width [32m'215'[0m size [32m'16.000000'[0m[34m
+  |- [0mitem [1m[35mTire[0m manufacturer [32m'Tire Brand'[0m width [32m'215'[0m size [32m'16.000000'[0m[34m
+  |- [0mitem [1m[35mTire[0m manufacturer [32m'Tire Brand'[0m width [32m'215'[0m size [32m'16.000000'[0m[34m
+  `- [0mitem [1m[35mTire[0m manufacturer [32m'Tire Brand'[0m width [32m'215'[0m size [32m'16.000000'[0m

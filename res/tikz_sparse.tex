@@ -1,0 +1,36 @@
+\documentclass{minimal}
+\usepackage{luatex85}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{graphdrawing,graphs,shapes}
+\usegdlibrary{layered}
+\usepackage{forest}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{lstlisting}
+\PreviewEnvironment{tikzpicture}
+\PreviewEnvironment{forest}
+\usepackage[numbered]{bookmark}
+\begin{document}
+\begin{tikzpicture}[layered layout,every edge/.style={very thick, draw=blue!40!black!60, shorten >=1pt, shorten <=1pt}, every node/.style={rectangle, text ragged, inner sep=2mm, rounded corners, shade, top color=white, bottom color=blue!50!black!20, draw=blue!40!black!60, very thick }]
+\node
+	[rectangle split, rectangle split parts=4, text ragged]
+	 (0x7ffcac1f0208-N4dump4demo3carE)
+	{
+		\textbf{Car}
+		\nodepart{two}
+		\textit{model}
+		Model 2000
+		\nodepart{three}
+		\textit{fuel}
+		electric
+		\nodepart{four}
+		\textit{power}
+		69.000000
+	};
+\end{tikzpicture}
+\end{document}
+
