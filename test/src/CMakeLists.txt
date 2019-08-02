@@ -5,7 +5,7 @@ SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/test)
 macro (add_test_target TEST_NAME TEST_SOURCE)
     if(TEST_ENABLED)
         add_executable(${TEST_NAME} ${TEST_SOURCE} "${CMAKE_CURRENT_SOURCE_DIR}/test.cpp")
-        target_link_libraries(${TEST_NAME} dump)
+        target_link_libraries(${TEST_NAME} dump Catch2::Catch2)
         target_include_directories(${TEST_NAME} PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}"
                                                         "${CMAKE_CURRENT_SOURCE_DIR}/../include")
 

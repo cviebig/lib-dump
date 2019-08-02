@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.1)
 project(lib-dump)
 
+find_package(Catch2 REQUIRED)
 
 # Boost
 find_package( Boost 1.61.0 )
